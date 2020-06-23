@@ -16,21 +16,54 @@ defmodule Exconv do
     :world
   end
 
-  def file_to_encoding do
-    {:ok, file} = File.open("mappings/VENDORS/MICSFT/WINDOWS/CP1251.TXT")
-    table = readline(file)
+  def generate_mappers do
+    encodings = fetch_encodings()
+    for encoding <- encodings do
+      case encoding do
+        {:ok, "hebrew", _} ->
+          :error
+        {:ok, "korean", _} ->
+          :error
+        {:ok, "corpchar", _} ->
+          :error
+        {:ok, "arabic", _} ->
+          :error
+        {:ok, "farsi", _} ->
+          :error
+        {:ok, name, file_path} ->
+	        file_to_encoding(file_path)
+          {:ok, file} = File.open("lib/mapper/#{name}.ex", [:write])
+          IO.binwrite(file, "defmodule Exconv.Mapper.#{String.capitalize(name)} do\n")
+          for {code, symbol} <- file_to_encoding(file_path) do
+            IO.binwrite(file, "  def to_unicode(#{code}), do: #{inspect(symbol, binaries: :as_binaries)} # #{symbol}\n")
+          end
+          IO.binwrite(file, "end")
+          File.close(file)
+        {:error, _} -> :error
+      end
+    end
+  end
+
+  def file_to_encoding(file_path) do
+    {:ok, file} = File.open(file_path)
+    IO.inspect(file_path)
+    table = readline(file, file_path)
     File.close(file)
     table
   end
 
-  def readline(file, result \\ []) do
+  def readline(file, file_path, result \\ []) do
     case IO.read(file, :line) do
-      "#" <> _ -> readline(file, result)
+      "#" <> _ -> readline(file, file_path, result)
       :eof ->
         result
+      <<26>> ->
+        readline(file, file_path, result)
+      "\n" ->
+        readline(file, file_path, result)
       line ->
         [from, to | _] = String.split(line, "\t")
-        readline(file, [{Parser.to_code(from), [Parser.to_code(to)] |> List.to_string()} | result])
+        readline(file, file_path, [{Exconv.Parser.to_code(from), [Exconv.Parser.to_code(to)] |> List.to_string()} | result])
     end
   end
 
@@ -72,11 +105,18 @@ defmodule Exconv do
     for file_path <- files do
       {:ok, file} = File.open(file_path)
       encoding = Path.basename(file_path, ".TXT")
-      case is_encoding?(file, encoding) do
-        true -> IO.inspect({:ok, file_path})
-        false -> IO.inspect(file_path)
-      end
+      name =
+        case encoding do
+          "8859" <> _ -> "iso#{encoding}"
+          _ -> encoding
+        end |> String.replace("-", "_") |> String.downcase()
+      result =
+        case is_encoding?(file, encoding) do
+          true -> {:ok, name, file_path}
+          false -> {:error, file_path}
+        end
       File.close(file)
+      result
     end
   end
 

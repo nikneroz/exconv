@@ -5,16 +5,14 @@ A small Elixir library for converting text between the unicode and different cha
 # Test code
 
 ```
-# 0xE9	0x0439	#CYRILLIC SMALL LETTER SHORT I
+test_str = <<224, 236, 225, 243, 235, 224, 242, 238, 240, 237, 238, 45, 239, 238, 235, 232,
+  234, 235, 232, 237, 232, 247, 229, 241, 234, 238, 229, 32, 32, 32, 32, 32, 32,
+  32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32,
+  32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32,
+  32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32,
+  32, 32, 32, 32, 32, 32, 32, 32, 32, 32>>
 
-iex(61)> {:ok, file} = File.open("/Users/rozenkin/Desktop/cp037")
-{:ok, #PID<0.238.0>}
-iex(62)> x = IO.binread(file, :all)
-<<233, 246, 243, 234, 229, 237, 227, 248, 249, 231>>
-iex(63)> "\xE9"
-<<233>>
-iex(64)> "\u0439"
-"й"
+Exconv.Parser.to_unicode(Exconv.Mapper.Cp1251, test_str)
 ```
 
 # Resources
@@ -40,4 +38,3 @@ end
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/exconv](https://hexdocs.pm/exconv).
-
