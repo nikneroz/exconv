@@ -40,8 +40,12 @@ defmodule Exconv do
             {:ok, file} = File.open("lib/mapper/#{name}.ex", [:write])
             IO.binwrite(file, "defmodule Exconv.#{module_name} do\n")
             for {code, symbol} <- file_to_encoding(file_path) do
-              binary_symbol = List.to_string([symbol])
-              IO.binwrite(file, "  def to_unicode(#{code}), do: #{inspect(symbol)} # #{inspect(binary_symbol, binaries: :as_binaries)} | \"#{symbol}\"\n")
+              binary_symbol =
+                case List.to_string([symbol]) do
+                  "\n" -> "\\n"
+                  sym -> sym
+                end
+              IO.binwrite(file, "  def to_unicode(#{code}), do: #{inspect(symbol)} # #{inspect(binary_symbol, binaries: :as_binaries)} | #{inspect(binary_symbol)}\n")
             end
             IO.binwrite(file, "end")
             File.close(file)
@@ -68,7 +72,10 @@ defmodule Exconv do
 
   defp file_to_encoding(file_path) do
     {:ok, file} = File.open(file_path)
-    table = readline(file, file_path)
+    table =
+      file
+      |> readline(file_path)
+      |> Enum.uniq_by(fn {code, _} -> code end)
     File.close(file)
     table
   end

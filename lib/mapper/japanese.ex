@@ -7258,7 +7258,7 @@ defmodule Exconv.Mapper.Japanese do
   def to_unicode(162), do: 65378 # <<239, 189, 162>> | "｢"
   def to_unicode(161), do: 65377 # <<239, 189, 161>> | "｡"
   def to_unicode(160), do: 160 # <<194, 160>> | " "
-  def to_unicode(128), do: 92 # <<92>> | "\"
+  def to_unicode(128), do: 92 # <<92>> | "\\"
   def to_unicode(126), do: 126 # <<126>> | "~"
   def to_unicode(125), do: 125 # <<125>> | "}"
   def to_unicode(124), do: 124 # <<124>> | "|"
@@ -7351,7 +7351,7 @@ defmodule Exconv.Mapper.Japanese do
   def to_unicode(37), do: 37 # <<37>> | "%"
   def to_unicode(36), do: 36 # <<36>> | "$"
   def to_unicode(35), do: 35 # <<35>> | "#"
-  def to_unicode(34), do: 34 # <<34>> | """
+  def to_unicode(34), do: 34 # <<34>> | "\""
   def to_unicode(33), do: 33 # <<33>> | "!"
   def to_unicode(32), do: 32 # <<32>> | " "
 end

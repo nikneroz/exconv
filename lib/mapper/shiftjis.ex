@@ -6909,7 +6909,7 @@ defmodule Exconv.Mapper.Shiftjis do
   def to_unicode(33122), do: 65372 # <<239, 189, 156>> | "｜"
   def to_unicode(33121), do: 8214 # <<226, 128, 150>> | "‖"
   def to_unicode(33120), do: 12316 # <<227, 128, 156>> | "〜"
-  def to_unicode(33119), do: 92 # <<92>> | "\"
+  def to_unicode(33119), do: 92 # <<92>> | "\\"
   def to_unicode(33118), do: 65295 # <<239, 188, 143>> | "／"
   def to_unicode(33117), do: 8208 # <<226, 128, 144>> | "‐"
   def to_unicode(33116), do: 8213 # <<226, 128, 149>> | "―"
@@ -7033,7 +7033,7 @@ defmodule Exconv.Mapper.Shiftjis do
   def to_unicode(37), do: 37 # <<37>> | "%"
   def to_unicode(36), do: 36 # <<36>> | "$"
   def to_unicode(35), do: 35 # <<35>> | "#"
-  def to_unicode(34), do: 34 # <<34>> | """
+  def to_unicode(34), do: 34 # <<34>> | "\""
   def to_unicode(33), do: 33 # <<33>> | "!"
   def to_unicode(32), do: 32 # <<32>> | " "
 end

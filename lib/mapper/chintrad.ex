@@ -13464,35 +13464,35 @@ defmodule Exconv.Mapper.Chintrad do
   def to_unicode(254), do: 8482 # <<226, 132, 162>> | "™"
   def to_unicode(253), do: 169 # <<194, 169>> | "©"
   def to_unicode(160), do: 160 # <<194, 160>> | " "
-  def to_unicode(159), do: 159 # <<194, 159>> | ""
-  def to_unicode(158), do: 158 # <<194, 158>> | ""
-  def to_unicode(157), do: 157 # <<194, 157>> | ""
-  def to_unicode(156), do: 156 # <<194, 156>> | ""
-  def to_unicode(155), do: 155 # <<194, 155>> | ""
-  def to_unicode(154), do: 154 # <<194, 154>> | ""
-  def to_unicode(153), do: 153 # <<194, 153>> | ""
-  def to_unicode(152), do: 152 # <<194, 152>> | ""
-  def to_unicode(151), do: 151 # <<194, 151>> | ""
-  def to_unicode(150), do: 150 # <<194, 150>> | ""
-  def to_unicode(149), do: 149 # <<194, 149>> | ""
-  def to_unicode(148), do: 148 # <<194, 148>> | ""
-  def to_unicode(147), do: 147 # <<194, 147>> | ""
-  def to_unicode(146), do: 146 # <<194, 146>> | ""
-  def to_unicode(145), do: 145 # <<194, 145>> | ""
-  def to_unicode(144), do: 144 # <<194, 144>> | ""
-  def to_unicode(143), do: 143 # <<194, 143>> | ""
-  def to_unicode(142), do: 142 # <<194, 142>> | ""
-  def to_unicode(141), do: 141 # <<194, 141>> | ""
-  def to_unicode(140), do: 140 # <<194, 140>> | ""
-  def to_unicode(139), do: 139 # <<194, 139>> | ""
-  def to_unicode(138), do: 138 # <<194, 138>> | ""
-  def to_unicode(137), do: 137 # <<194, 137>> | ""
-  def to_unicode(136), do: 136 # <<194, 136>> | ""
-  def to_unicode(135), do: 135 # <<194, 135>> | ""
-  def to_unicode(134), do: 134 # <<194, 134>> | ""
-  def to_unicode(133), do: 133 # <<194, 133>> | ""
-  def to_unicode(132), do: 132 # <<194, 132>> | ""
-  def to_unicode(131), do: 131 # <<194, 131>> | ""
+  def to_unicode(159), do: 159 # <<194, 159>> | <<194, 159>>
+  def to_unicode(158), do: 158 # <<194, 158>> | <<194, 158>>
+  def to_unicode(157), do: 157 # <<194, 157>> | <<194, 157>>
+  def to_unicode(156), do: 156 # <<194, 156>> | <<194, 156>>
+  def to_unicode(155), do: 155 # <<194, 155>> | <<194, 155>>
+  def to_unicode(154), do: 154 # <<194, 154>> | <<194, 154>>
+  def to_unicode(153), do: 153 # <<194, 153>> | <<194, 153>>
+  def to_unicode(152), do: 152 # <<194, 152>> | <<194, 152>>
+  def to_unicode(151), do: 151 # <<194, 151>> | <<194, 151>>
+  def to_unicode(150), do: 150 # <<194, 150>> | <<194, 150>>
+  def to_unicode(149), do: 149 # <<194, 149>> | <<194, 149>>
+  def to_unicode(148), do: 148 # <<194, 148>> | <<194, 148>>
+  def to_unicode(147), do: 147 # <<194, 147>> | <<194, 147>>
+  def to_unicode(146), do: 146 # <<194, 146>> | <<194, 146>>
+  def to_unicode(145), do: 145 # <<194, 145>> | <<194, 145>>
+  def to_unicode(144), do: 144 # <<194, 144>> | <<194, 144>>
+  def to_unicode(143), do: 143 # <<194, 143>> | <<194, 143>>
+  def to_unicode(142), do: 142 # <<194, 142>> | <<194, 142>>
+  def to_unicode(141), do: 141 # <<194, 141>> | <<194, 141>>
+  def to_unicode(140), do: 140 # <<194, 140>> | <<194, 140>>
+  def to_unicode(139), do: 139 # <<194, 139>> | <<194, 139>>
+  def to_unicode(138), do: 138 # <<194, 138>> | <<194, 138>>
+  def to_unicode(137), do: 137 # <<194, 137>> | <<194, 137>>
+  def to_unicode(136), do: 136 # <<194, 136>> | <<194, 136>>
+  def to_unicode(135), do: 135 # <<194, 135>> | <<194, 135>>
+  def to_unicode(134), do: 134 # <<194, 134>> | <<194, 134>>
+  def to_unicode(133), do: 133 # <<194, 133>> | <<194, 133>>
+  def to_unicode(132), do: 132 # <<194, 132>> | <<194, 132>>
+  def to_unicode(131), do: 131 # <<194, 131>> | <<194, 131>>
   def to_unicode(130), do: 63617 # <<239, 162, 129>> | ""
   def to_unicode(129), do: 63616 # <<239, 162, 128>> | ""
   def to_unicode(128), do: 63707 # <<239, 163, 155>> | ""
@@ -13530,7 +13530,7 @@ defmodule Exconv.Mapper.Chintrad do
   def to_unicode(95), do: 95 # <<95>> | "_"
   def to_unicode(94), do: 94 # <<94>> | "^"
   def to_unicode(93), do: 93 # <<93>> | "]"
-  def to_unicode(92), do: 92 # <<92>> | "\"
+  def to_unicode(92), do: 92 # <<92>> | "\\"
   def to_unicode(91), do: 91 # <<91>> | "["
   def to_unicode(90), do: 90 # <<90>> | "Z"
   def to_unicode(89), do: 89 # <<89>> | "Y"
@@ -13588,7 +13588,7 @@ defmodule Exconv.Mapper.Chintrad do
   def to_unicode(37), do: 37 # <<37>> | "%"
   def to_unicode(36), do: 36 # <<36>> | "$"
   def to_unicode(35), do: 35 # <<35>> | "#"
-  def to_unicode(34), do: 34 # <<34>> | """
+  def to_unicode(34), do: 34 # <<34>> | "\""
   def to_unicode(33), do: 33 # <<33>> | "!"
   def to_unicode(32), do: 32 # <<32>> | " "
 end

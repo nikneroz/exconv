@@ -161,7 +161,7 @@ defmodule Exconv.Mapper.Turkish do
   def to_unicode(95), do: 95 # <<95>> | "_"
   def to_unicode(94), do: 94 # <<94>> | "^"
   def to_unicode(93), do: 93 # <<93>> | "]"
-  def to_unicode(92), do: 92 # <<92>> | "\"
+  def to_unicode(92), do: 92 # <<92>> | "\\"
   def to_unicode(91), do: 91 # <<91>> | "["
   def to_unicode(90), do: 90 # <<90>> | "Z"
   def to_unicode(89), do: 89 # <<89>> | "Y"
@@ -219,7 +219,7 @@ defmodule Exconv.Mapper.Turkish do
   def to_unicode(37), do: 37 # <<37>> | "%"
   def to_unicode(36), do: 36 # <<36>> | "$"
   def to_unicode(35), do: 35 # <<35>> | "#"
-  def to_unicode(34), do: 34 # <<34>> | """
+  def to_unicode(34), do: 34 # <<34>> | "\""
   def to_unicode(33), do: 33 # <<33>> | "!"
   def to_unicode(32), do: 32 # <<32>> | " "
 end

@@ -88,39 +88,39 @@ defmodule Exconv.Mapper.Iso8859_3 do
   def to_unicode(162), do: 728 # <<203, 152>> | "˘"
   def to_unicode(161), do: 294 # <<196, 166>> | "Ħ"
   def to_unicode(160), do: 160 # <<194, 160>> | " "
-  def to_unicode(159), do: 159 # <<194, 159>> | ""
-  def to_unicode(158), do: 158 # <<194, 158>> | ""
-  def to_unicode(157), do: 157 # <<194, 157>> | ""
-  def to_unicode(156), do: 156 # <<194, 156>> | ""
-  def to_unicode(155), do: 155 # <<194, 155>> | ""
-  def to_unicode(154), do: 154 # <<194, 154>> | ""
-  def to_unicode(153), do: 153 # <<194, 153>> | ""
-  def to_unicode(152), do: 152 # <<194, 152>> | ""
-  def to_unicode(151), do: 151 # <<194, 151>> | ""
-  def to_unicode(150), do: 150 # <<194, 150>> | ""
-  def to_unicode(149), do: 149 # <<194, 149>> | ""
-  def to_unicode(148), do: 148 # <<194, 148>> | ""
-  def to_unicode(147), do: 147 # <<194, 147>> | ""
-  def to_unicode(146), do: 146 # <<194, 146>> | ""
-  def to_unicode(145), do: 145 # <<194, 145>> | ""
-  def to_unicode(144), do: 144 # <<194, 144>> | ""
-  def to_unicode(143), do: 143 # <<194, 143>> | ""
-  def to_unicode(142), do: 142 # <<194, 142>> | ""
-  def to_unicode(141), do: 141 # <<194, 141>> | ""
-  def to_unicode(140), do: 140 # <<194, 140>> | ""
-  def to_unicode(139), do: 139 # <<194, 139>> | ""
-  def to_unicode(138), do: 138 # <<194, 138>> | ""
-  def to_unicode(137), do: 137 # <<194, 137>> | ""
-  def to_unicode(136), do: 136 # <<194, 136>> | ""
-  def to_unicode(135), do: 135 # <<194, 135>> | ""
-  def to_unicode(134), do: 134 # <<194, 134>> | ""
-  def to_unicode(133), do: 133 # <<194, 133>> | ""
-  def to_unicode(132), do: 132 # <<194, 132>> | ""
-  def to_unicode(131), do: 131 # <<194, 131>> | ""
-  def to_unicode(130), do: 130 # <<194, 130>> | ""
-  def to_unicode(129), do: 129 # <<194, 129>> | ""
-  def to_unicode(128), do: 128 # <<194, 128>> | ""
-  def to_unicode(127), do: 127 # <<127>> | ""
+  def to_unicode(159), do: 159 # <<194, 159>> | <<194, 159>>
+  def to_unicode(158), do: 158 # <<194, 158>> | <<194, 158>>
+  def to_unicode(157), do: 157 # <<194, 157>> | <<194, 157>>
+  def to_unicode(156), do: 156 # <<194, 156>> | <<194, 156>>
+  def to_unicode(155), do: 155 # <<194, 155>> | <<194, 155>>
+  def to_unicode(154), do: 154 # <<194, 154>> | <<194, 154>>
+  def to_unicode(153), do: 153 # <<194, 153>> | <<194, 153>>
+  def to_unicode(152), do: 152 # <<194, 152>> | <<194, 152>>
+  def to_unicode(151), do: 151 # <<194, 151>> | <<194, 151>>
+  def to_unicode(150), do: 150 # <<194, 150>> | <<194, 150>>
+  def to_unicode(149), do: 149 # <<194, 149>> | <<194, 149>>
+  def to_unicode(148), do: 148 # <<194, 148>> | <<194, 148>>
+  def to_unicode(147), do: 147 # <<194, 147>> | <<194, 147>>
+  def to_unicode(146), do: 146 # <<194, 146>> | <<194, 146>>
+  def to_unicode(145), do: 145 # <<194, 145>> | <<194, 145>>
+  def to_unicode(144), do: 144 # <<194, 144>> | <<194, 144>>
+  def to_unicode(143), do: 143 # <<194, 143>> | <<194, 143>>
+  def to_unicode(142), do: 142 # <<194, 142>> | <<194, 142>>
+  def to_unicode(141), do: 141 # <<194, 141>> | <<194, 141>>
+  def to_unicode(140), do: 140 # <<194, 140>> | <<194, 140>>
+  def to_unicode(139), do: 139 # <<194, 139>> | <<194, 139>>
+  def to_unicode(138), do: 138 # <<194, 138>> | <<194, 138>>
+  def to_unicode(137), do: 137 # <<194, 137>> | <<194, 137>>
+  def to_unicode(136), do: 136 # <<194, 136>> | <<194, 136>>
+  def to_unicode(135), do: 135 # <<194, 135>> | <<194, 135>>
+  def to_unicode(134), do: 134 # <<194, 134>> | <<194, 134>>
+  def to_unicode(133), do: 133 # <<194, 133>> | <<194, 133>>
+  def to_unicode(132), do: 132 # <<194, 132>> | <<194, 132>>
+  def to_unicode(131), do: 131 # <<194, 131>> | <<194, 131>>
+  def to_unicode(130), do: 130 # <<194, 130>> | <<194, 130>>
+  def to_unicode(129), do: 129 # <<194, 129>> | <<194, 129>>
+  def to_unicode(128), do: 128 # <<194, 128>> | <<194, 128>>
+  def to_unicode(127), do: 127 # <<127>> | "\d"
   def to_unicode(126), do: 126 # <<126>> | "~"
   def to_unicode(125), do: 125 # <<125>> | "}"
   def to_unicode(124), do: 124 # <<124>> | "|"
@@ -155,7 +155,7 @@ defmodule Exconv.Mapper.Iso8859_3 do
   def to_unicode(95), do: 95 # <<95>> | "_"
   def to_unicode(94), do: 94 # <<94>> | "^"
   def to_unicode(93), do: 93 # <<93>> | "]"
-  def to_unicode(92), do: 92 # <<92>> | "\"
+  def to_unicode(92), do: 92 # <<92>> | "\\"
   def to_unicode(91), do: 91 # <<91>> | "["
   def to_unicode(90), do: 90 # <<90>> | "Z"
   def to_unicode(89), do: 89 # <<89>> | "Y"
@@ -213,40 +213,39 @@ defmodule Exconv.Mapper.Iso8859_3 do
   def to_unicode(37), do: 37 # <<37>> | "%"
   def to_unicode(36), do: 36 # <<36>> | "$"
   def to_unicode(35), do: 35 # <<35>> | "#"
-  def to_unicode(34), do: 34 # <<34>> | """
+  def to_unicode(34), do: 34 # <<34>> | "\""
   def to_unicode(33), do: 33 # <<33>> | "!"
   def to_unicode(32), do: 32 # <<32>> | " "
-  def to_unicode(31), do: 31 # <<31>> | ""
-  def to_unicode(30), do: 30 # <<30>> | ""
-  def to_unicode(29), do: 29 # <<29>> | ""
-  def to_unicode(28), do: 28 # <<28>> | ""
-  def to_unicode(27), do: 27 # <<27>> | ""
-  def to_unicode(26), do: 26 # <<26>> | ""
-  def to_unicode(25), do: 25 # <<25>> | ""
-  def to_unicode(24), do: 24 # <<24>> | ""
-  def to_unicode(23), do: 23 # <<23>> | ""
-  def to_unicode(22), do: 22 # <<22>> | ""
-  def to_unicode(21), do: 21 # <<21>> | ""
-  def to_unicode(20), do: 20 # <<20>> | ""
-  def to_unicode(19), do: 19 # <<19>> | ""
-  def to_unicode(18), do: 18 # <<18>> | ""
-  def to_unicode(17), do: 17 # <<17>> | ""
-  def to_unicode(16), do: 16 # <<16>> | ""
-  def to_unicode(15), do: 15 # <<15>> | ""
-  def to_unicode(14), do: 14 # <<14>> | ""
-  def to_unicode(13), do: 13 # <<13>> | ""
-  def to_unicode(12), do: 12 # <<12>> | ""
-  def to_unicode(11), do: 11 # <<11>> | ""
-  def to_unicode(10), do: 10 # <<10>> | "
-"
-  def to_unicode(9), do: 9 # <<9>> | "	"
-  def to_unicode(8), do: 8 # <<8>> | ""
-  def to_unicode(7), do: 7 # <<7>> | ""
-  def to_unicode(6), do: 6 # <<6>> | ""
-  def to_unicode(5), do: 5 # <<5>> | ""
-  def to_unicode(4), do: 4 # <<4>> | ""
-  def to_unicode(3), do: 3 # <<3>> | ""
-  def to_unicode(2), do: 2 # <<2>> | ""
-  def to_unicode(1), do: 1 # <<1>> | ""
-  def to_unicode(0), do: 0 # <<0>> | " "
+  def to_unicode(31), do: 31 # <<31>> | <<31>>
+  def to_unicode(30), do: 30 # <<30>> | <<30>>
+  def to_unicode(29), do: 29 # <<29>> | <<29>>
+  def to_unicode(28), do: 28 # <<28>> | <<28>>
+  def to_unicode(27), do: 27 # <<27>> | "\e"
+  def to_unicode(26), do: 26 # <<26>> | <<26>>
+  def to_unicode(25), do: 25 # <<25>> | <<25>>
+  def to_unicode(24), do: 24 # <<24>> | <<24>>
+  def to_unicode(23), do: 23 # <<23>> | <<23>>
+  def to_unicode(22), do: 22 # <<22>> | <<22>>
+  def to_unicode(21), do: 21 # <<21>> | <<21>>
+  def to_unicode(20), do: 20 # <<20>> | <<20>>
+  def to_unicode(19), do: 19 # <<19>> | <<19>>
+  def to_unicode(18), do: 18 # <<18>> | <<18>>
+  def to_unicode(17), do: 17 # <<17>> | <<17>>
+  def to_unicode(16), do: 16 # <<16>> | <<16>>
+  def to_unicode(15), do: 15 # <<15>> | <<15>>
+  def to_unicode(14), do: 14 # <<14>> | <<14>>
+  def to_unicode(13), do: 13 # <<13>> | "\r"
+  def to_unicode(12), do: 12 # <<12>> | "\f"
+  def to_unicode(11), do: 11 # <<11>> | "\v"
+  def to_unicode(10), do: 10 # <<92, 110>> | "\\n"
+  def to_unicode(9), do: 9 # <<9>> | "\t"
+  def to_unicode(8), do: 8 # <<8>> | "\b"
+  def to_unicode(7), do: 7 # <<7>> | "\a"
+  def to_unicode(6), do: 6 # <<6>> | <<6>>
+  def to_unicode(5), do: 5 # <<5>> | <<5>>
+  def to_unicode(4), do: 4 # <<4>> | <<4>>
+  def to_unicode(3), do: 3 # <<3>> | <<3>>
+  def to_unicode(2), do: 2 # <<2>> | <<2>>
+  def to_unicode(1), do: 1 # <<1>> | <<1>>
+  def to_unicode(0), do: 0 # <<0>> | <<0>>
 end
