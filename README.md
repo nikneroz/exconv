@@ -1,5 +1,8 @@
 # Exconv
 
+[![Hex pm](https://img.shields.io/hexpm/v/exconv.svg?style=flat)](https://hex.pm/packages/exconv)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
 A small Elixir library for converting text between the unicode and different character sets inspired by [erlyconv](https://github.com/eugenehr/erlyconv).
 
 # Test code

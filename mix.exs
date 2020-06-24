@@ -32,6 +32,7 @@ defmodule Exconv.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
       {:erlyconv, github: "eugenehr/erlyconv", only: :dev},
       {:benchee, "~> 1.0", only: :dev}
       # {:dep_from_hexpm, "~> 0.3.0"},
