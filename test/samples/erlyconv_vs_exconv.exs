@@ -6,7 +6,7 @@ Benchee.run(
       :erlyconv.to_unicode(:cp1251, text)
     end,
     "exconv" => fn ->
-      Exconv.Parser.to_unicode(Exconv.Mapper.Cp1251, text)
+      Exconv.to_unicode!(text, :cp1251)
     end
   }
 )

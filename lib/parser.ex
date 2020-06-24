@@ -13,10 +13,10 @@ defmodule Exconv.Parser do
     |> Enum.sum
   end
 
-  def to_unicode(module, string, result \\ "") 
-  def to_unicode(_table, "", result), do: result
-  def to_unicode(module, <<head, tail::binary>>, result) do
-    to_unicode(module, tail, result <> module.to_unicode(head))
+  def to_unicode!(module, string, result \\ [])
+  def to_unicode!(_table, "", result), do: result |> Enum.reverse() |> List.to_string()
+  def to_unicode!(module, <<head, tail::binary>>, result) do
+    to_unicode!(module, tail, [module.to_unicode(head) | result])
   end
 
   defp parse(string) do

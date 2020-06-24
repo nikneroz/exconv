@@ -1,204 +1,204 @@
 defmodule Exconv.Mapper.Dingbats do
-  def to_unicode(254), do: <<226, 158, 190>> # ➾
-  def to_unicode(253), do: <<226, 158, 189>> # ➽
-  def to_unicode(252), do: <<226, 158, 188>> # ➼
-  def to_unicode(251), do: <<226, 158, 187>> # ➻
-  def to_unicode(250), do: <<226, 158, 186>> # ➺
-  def to_unicode(249), do: <<226, 158, 185>> # ➹
-  def to_unicode(248), do: <<226, 158, 184>> # ➸
-  def to_unicode(247), do: <<226, 158, 183>> # ➷
-  def to_unicode(246), do: <<226, 158, 182>> # ➶
-  def to_unicode(245), do: <<226, 158, 181>> # ➵
-  def to_unicode(244), do: <<226, 158, 180>> # ➴
-  def to_unicode(243), do: <<226, 158, 179>> # ➳
-  def to_unicode(242), do: <<226, 158, 178>> # ➲
-  def to_unicode(241), do: <<226, 158, 177>> # ➱
-  def to_unicode(239), do: <<226, 158, 175>> # ➯
-  def to_unicode(238), do: <<226, 158, 174>> # ➮
-  def to_unicode(237), do: <<226, 158, 173>> # ➭
-  def to_unicode(236), do: <<226, 158, 172>> # ➬
-  def to_unicode(235), do: <<226, 158, 171>> # ➫
-  def to_unicode(234), do: <<226, 158, 170>> # ➪
-  def to_unicode(233), do: <<226, 158, 169>> # ➩
-  def to_unicode(232), do: <<226, 158, 168>> # ➨
-  def to_unicode(231), do: <<226, 158, 167>> # ➧
-  def to_unicode(230), do: <<226, 158, 166>> # ➦
-  def to_unicode(229), do: <<226, 158, 165>> # ➥
-  def to_unicode(228), do: <<226, 158, 164>> # ➤
-  def to_unicode(227), do: <<226, 158, 163>> # ➣
-  def to_unicode(226), do: <<226, 158, 162>> # ➢
-  def to_unicode(225), do: <<226, 158, 161>> # ➡
-  def to_unicode(224), do: <<226, 158, 160>> # ➠
-  def to_unicode(223), do: <<226, 158, 159>> # ➟
-  def to_unicode(222), do: <<226, 158, 158>> # ➞
-  def to_unicode(221), do: <<226, 158, 157>> # ➝
-  def to_unicode(220), do: <<226, 158, 156>> # ➜
-  def to_unicode(219), do: <<226, 158, 155>> # ➛
-  def to_unicode(218), do: <<226, 158, 154>> # ➚
-  def to_unicode(217), do: <<226, 158, 153>> # ➙
-  def to_unicode(216), do: <<226, 158, 152>> # ➘
-  def to_unicode(215), do: <<226, 134, 149>> # ↕
-  def to_unicode(214), do: <<226, 134, 148>> # ↔
-  def to_unicode(213), do: <<226, 134, 146>> # →
-  def to_unicode(212), do: <<226, 158, 148>> # ➔
-  def to_unicode(211), do: <<226, 158, 147>> # ➓
-  def to_unicode(210), do: <<226, 158, 146>> # ➒
-  def to_unicode(209), do: <<226, 158, 145>> # ➑
-  def to_unicode(208), do: <<226, 158, 144>> # ➐
-  def to_unicode(207), do: <<226, 158, 143>> # ➏
-  def to_unicode(206), do: <<226, 158, 142>> # ➎
-  def to_unicode(205), do: <<226, 158, 141>> # ➍
-  def to_unicode(204), do: <<226, 158, 140>> # ➌
-  def to_unicode(203), do: <<226, 158, 139>> # ➋
-  def to_unicode(202), do: <<226, 158, 138>> # ➊
-  def to_unicode(201), do: <<226, 158, 137>> # ➉
-  def to_unicode(200), do: <<226, 158, 136>> # ➈
-  def to_unicode(199), do: <<226, 158, 135>> # ➇
-  def to_unicode(198), do: <<226, 158, 134>> # ➆
-  def to_unicode(197), do: <<226, 158, 133>> # ➅
-  def to_unicode(196), do: <<226, 158, 132>> # ➄
-  def to_unicode(195), do: <<226, 158, 131>> # ➃
-  def to_unicode(194), do: <<226, 158, 130>> # ➂
-  def to_unicode(193), do: <<226, 158, 129>> # ➁
-  def to_unicode(192), do: <<226, 158, 128>> # ➀
-  def to_unicode(191), do: <<226, 157, 191>> # ❿
-  def to_unicode(190), do: <<226, 157, 190>> # ❾
-  def to_unicode(189), do: <<226, 157, 189>> # ❽
-  def to_unicode(188), do: <<226, 157, 188>> # ❼
-  def to_unicode(187), do: <<226, 157, 187>> # ❻
-  def to_unicode(186), do: <<226, 157, 186>> # ❺
-  def to_unicode(185), do: <<226, 157, 185>> # ❹
-  def to_unicode(184), do: <<226, 157, 184>> # ❸
-  def to_unicode(183), do: <<226, 157, 183>> # ❷
-  def to_unicode(182), do: <<226, 157, 182>> # ❶
-  def to_unicode(181), do: <<226, 145, 169>> # ⑩
-  def to_unicode(180), do: <<226, 145, 168>> # ⑨
-  def to_unicode(179), do: <<226, 145, 167>> # ⑧
-  def to_unicode(178), do: <<226, 145, 166>> # ⑦
-  def to_unicode(177), do: <<226, 145, 165>> # ⑥
-  def to_unicode(176), do: <<226, 145, 164>> # ⑤
-  def to_unicode(175), do: <<226, 145, 163>> # ④
-  def to_unicode(174), do: <<226, 145, 162>> # ③
-  def to_unicode(173), do: <<226, 145, 161>> # ②
-  def to_unicode(172), do: <<226, 145, 160>> # ①
-  def to_unicode(171), do: <<226, 153, 160>> # ♠
-  def to_unicode(170), do: <<226, 153, 165>> # ♥
-  def to_unicode(169), do: <<226, 153, 166>> # ♦
-  def to_unicode(168), do: <<226, 153, 163>> # ♣
-  def to_unicode(167), do: <<226, 157, 167>> # ❧
-  def to_unicode(166), do: <<226, 157, 166>> # ❦
-  def to_unicode(165), do: <<226, 157, 165>> # ❥
-  def to_unicode(164), do: <<226, 157, 164>> # ❤
-  def to_unicode(163), do: <<226, 157, 163>> # ❣
-  def to_unicode(162), do: <<226, 157, 162>> # ❢
-  def to_unicode(161), do: <<226, 157, 161>> # ❡
-  def to_unicode(141), do: <<226, 157, 181>> # ❵
-  def to_unicode(140), do: <<226, 157, 180>> # ❴
-  def to_unicode(139), do: <<226, 157, 179>> # ❳
-  def to_unicode(138), do: <<226, 157, 178>> # ❲
-  def to_unicode(137), do: <<226, 157, 177>> # ❱
-  def to_unicode(136), do: <<226, 157, 176>> # ❰
-  def to_unicode(135), do: <<226, 157, 175>> # ❯
-  def to_unicode(134), do: <<226, 157, 174>> # ❮
-  def to_unicode(133), do: <<226, 157, 173>> # ❭
-  def to_unicode(132), do: <<226, 157, 172>> # ❬
-  def to_unicode(131), do: <<226, 157, 171>> # ❫
-  def to_unicode(130), do: <<226, 157, 170>> # ❪
-  def to_unicode(129), do: <<226, 157, 169>> # ❩
-  def to_unicode(128), do: <<226, 157, 168>> # ❨
-  def to_unicode(126), do: <<226, 157, 158>> # ❞
-  def to_unicode(125), do: <<226, 157, 157>> # ❝
-  def to_unicode(124), do: <<226, 157, 156>> # ❜
-  def to_unicode(123), do: <<226, 157, 155>> # ❛
-  def to_unicode(122), do: <<226, 157, 154>> # ❚
-  def to_unicode(121), do: <<226, 157, 153>> # ❙
-  def to_unicode(120), do: <<226, 157, 152>> # ❘
-  def to_unicode(119), do: <<226, 151, 151>> # ◗
-  def to_unicode(118), do: <<226, 157, 150>> # ❖
-  def to_unicode(117), do: <<226, 151, 134>> # ◆
-  def to_unicode(116), do: <<226, 150, 188>> # ▼
-  def to_unicode(115), do: <<226, 150, 178>> # ▲
-  def to_unicode(114), do: <<226, 157, 146>> # ❒
-  def to_unicode(113), do: <<226, 157, 145>> # ❑
-  def to_unicode(112), do: <<226, 157, 144>> # ❐
-  def to_unicode(111), do: <<226, 157, 143>> # ❏
-  def to_unicode(110), do: <<226, 150, 160>> # ■
-  def to_unicode(109), do: <<226, 157, 141>> # ❍
-  def to_unicode(108), do: <<226, 151, 143>> # ●
-  def to_unicode(107), do: <<226, 157, 139>> # ❋
-  def to_unicode(106), do: <<226, 157, 138>> # ❊
-  def to_unicode(105), do: <<226, 157, 137>> # ❉
-  def to_unicode(104), do: <<226, 157, 136>> # ❈
-  def to_unicode(103), do: <<226, 157, 135>> # ❇
-  def to_unicode(102), do: <<226, 157, 134>> # ❆
-  def to_unicode(101), do: <<226, 157, 133>> # ❅
-  def to_unicode(100), do: <<226, 157, 132>> # ❄
-  def to_unicode(99), do: <<226, 157, 131>> # ❃
-  def to_unicode(98), do: <<226, 157, 130>> # ❂
-  def to_unicode(97), do: <<226, 157, 129>> # ❁
-  def to_unicode(96), do: <<226, 157, 128>> # ❀
-  def to_unicode(95), do: <<226, 156, 191>> # ✿
-  def to_unicode(94), do: <<226, 156, 190>> # ✾
-  def to_unicode(93), do: <<226, 156, 189>> # ✽
-  def to_unicode(92), do: <<226, 156, 188>> # ✼
-  def to_unicode(91), do: <<226, 156, 187>> # ✻
-  def to_unicode(90), do: <<226, 156, 186>> # ✺
-  def to_unicode(89), do: <<226, 156, 185>> # ✹
-  def to_unicode(88), do: <<226, 156, 184>> # ✸
-  def to_unicode(87), do: <<226, 156, 183>> # ✷
-  def to_unicode(86), do: <<226, 156, 182>> # ✶
-  def to_unicode(85), do: <<226, 156, 181>> # ✵
-  def to_unicode(84), do: <<226, 156, 180>> # ✴
-  def to_unicode(83), do: <<226, 156, 179>> # ✳
-  def to_unicode(82), do: <<226, 156, 178>> # ✲
-  def to_unicode(81), do: <<226, 156, 177>> # ✱
-  def to_unicode(80), do: <<226, 156, 176>> # ✰
-  def to_unicode(79), do: <<226, 156, 175>> # ✯
-  def to_unicode(78), do: <<226, 156, 174>> # ✮
-  def to_unicode(77), do: <<226, 156, 173>> # ✭
-  def to_unicode(76), do: <<226, 156, 172>> # ✬
-  def to_unicode(75), do: <<226, 156, 171>> # ✫
-  def to_unicode(74), do: <<226, 156, 170>> # ✪
-  def to_unicode(73), do: <<226, 156, 169>> # ✩
-  def to_unicode(72), do: <<226, 152, 133>> # ★
-  def to_unicode(71), do: <<226, 156, 167>> # ✧
-  def to_unicode(70), do: <<226, 156, 166>> # ✦
-  def to_unicode(69), do: <<226, 156, 165>> # ✥
-  def to_unicode(68), do: <<226, 156, 164>> # ✤
-  def to_unicode(67), do: <<226, 156, 163>> # ✣
-  def to_unicode(66), do: <<226, 156, 162>> # ✢
-  def to_unicode(65), do: <<226, 156, 161>> # ✡
-  def to_unicode(64), do: <<226, 156, 160>> # ✠
-  def to_unicode(63), do: <<226, 156, 159>> # ✟
-  def to_unicode(62), do: <<226, 156, 158>> # ✞
-  def to_unicode(61), do: <<226, 156, 157>> # ✝
-  def to_unicode(60), do: <<226, 156, 156>> # ✜
-  def to_unicode(59), do: <<226, 156, 155>> # ✛
-  def to_unicode(58), do: <<226, 156, 154>> # ✚
-  def to_unicode(57), do: <<226, 156, 153>> # ✙
-  def to_unicode(56), do: <<226, 156, 152>> # ✘
-  def to_unicode(55), do: <<226, 156, 151>> # ✗
-  def to_unicode(54), do: <<226, 156, 150>> # ✖
-  def to_unicode(53), do: <<226, 156, 149>> # ✕
-  def to_unicode(52), do: <<226, 156, 148>> # ✔
-  def to_unicode(51), do: <<226, 156, 147>> # ✓
-  def to_unicode(50), do: <<226, 156, 146>> # ✒
-  def to_unicode(49), do: <<226, 156, 145>> # ✑
-  def to_unicode(48), do: <<226, 156, 144>> # ✐
-  def to_unicode(47), do: <<226, 156, 143>> # ✏
-  def to_unicode(46), do: <<226, 156, 142>> # ✎
-  def to_unicode(45), do: <<226, 156, 141>> # ✍
-  def to_unicode(44), do: <<226, 156, 140>> # ✌
-  def to_unicode(43), do: <<226, 152, 158>> # ☞
-  def to_unicode(42), do: <<226, 152, 155>> # ☛
-  def to_unicode(41), do: <<226, 156, 137>> # ✉
-  def to_unicode(40), do: <<226, 156, 136>> # ✈
-  def to_unicode(39), do: <<226, 156, 135>> # ✇
-  def to_unicode(38), do: <<226, 156, 134>> # ✆
-  def to_unicode(37), do: <<226, 152, 142>> # ☎
-  def to_unicode(36), do: <<226, 156, 132>> # ✄
-  def to_unicode(35), do: <<226, 156, 131>> # ✃
-  def to_unicode(34), do: <<226, 156, 130>> # ✂
-  def to_unicode(33), do: <<226, 156, 129>> # ✁
-  def to_unicode(32), do: <<32>> #  
+  def to_unicode(254), do: 10174 # <<226, 158, 190>> | "10174"
+  def to_unicode(253), do: 10173 # <<226, 158, 189>> | "10173"
+  def to_unicode(252), do: 10172 # <<226, 158, 188>> | "10172"
+  def to_unicode(251), do: 10171 # <<226, 158, 187>> | "10171"
+  def to_unicode(250), do: 10170 # <<226, 158, 186>> | "10170"
+  def to_unicode(249), do: 10169 # <<226, 158, 185>> | "10169"
+  def to_unicode(248), do: 10168 # <<226, 158, 184>> | "10168"
+  def to_unicode(247), do: 10167 # <<226, 158, 183>> | "10167"
+  def to_unicode(246), do: 10166 # <<226, 158, 182>> | "10166"
+  def to_unicode(245), do: 10165 # <<226, 158, 181>> | "10165"
+  def to_unicode(244), do: 10164 # <<226, 158, 180>> | "10164"
+  def to_unicode(243), do: 10163 # <<226, 158, 179>> | "10163"
+  def to_unicode(242), do: 10162 # <<226, 158, 178>> | "10162"
+  def to_unicode(241), do: 10161 # <<226, 158, 177>> | "10161"
+  def to_unicode(239), do: 10159 # <<226, 158, 175>> | "10159"
+  def to_unicode(238), do: 10158 # <<226, 158, 174>> | "10158"
+  def to_unicode(237), do: 10157 # <<226, 158, 173>> | "10157"
+  def to_unicode(236), do: 10156 # <<226, 158, 172>> | "10156"
+  def to_unicode(235), do: 10155 # <<226, 158, 171>> | "10155"
+  def to_unicode(234), do: 10154 # <<226, 158, 170>> | "10154"
+  def to_unicode(233), do: 10153 # <<226, 158, 169>> | "10153"
+  def to_unicode(232), do: 10152 # <<226, 158, 168>> | "10152"
+  def to_unicode(231), do: 10151 # <<226, 158, 167>> | "10151"
+  def to_unicode(230), do: 10150 # <<226, 158, 166>> | "10150"
+  def to_unicode(229), do: 10149 # <<226, 158, 165>> | "10149"
+  def to_unicode(228), do: 10148 # <<226, 158, 164>> | "10148"
+  def to_unicode(227), do: 10147 # <<226, 158, 163>> | "10147"
+  def to_unicode(226), do: 10146 # <<226, 158, 162>> | "10146"
+  def to_unicode(225), do: 10145 # <<226, 158, 161>> | "10145"
+  def to_unicode(224), do: 10144 # <<226, 158, 160>> | "10144"
+  def to_unicode(223), do: 10143 # <<226, 158, 159>> | "10143"
+  def to_unicode(222), do: 10142 # <<226, 158, 158>> | "10142"
+  def to_unicode(221), do: 10141 # <<226, 158, 157>> | "10141"
+  def to_unicode(220), do: 10140 # <<226, 158, 156>> | "10140"
+  def to_unicode(219), do: 10139 # <<226, 158, 155>> | "10139"
+  def to_unicode(218), do: 10138 # <<226, 158, 154>> | "10138"
+  def to_unicode(217), do: 10137 # <<226, 158, 153>> | "10137"
+  def to_unicode(216), do: 10136 # <<226, 158, 152>> | "10136"
+  def to_unicode(215), do: 8597 # <<226, 134, 149>> | "8597"
+  def to_unicode(214), do: 8596 # <<226, 134, 148>> | "8596"
+  def to_unicode(213), do: 8594 # <<226, 134, 146>> | "8594"
+  def to_unicode(212), do: 10132 # <<226, 158, 148>> | "10132"
+  def to_unicode(211), do: 10131 # <<226, 158, 147>> | "10131"
+  def to_unicode(210), do: 10130 # <<226, 158, 146>> | "10130"
+  def to_unicode(209), do: 10129 # <<226, 158, 145>> | "10129"
+  def to_unicode(208), do: 10128 # <<226, 158, 144>> | "10128"
+  def to_unicode(207), do: 10127 # <<226, 158, 143>> | "10127"
+  def to_unicode(206), do: 10126 # <<226, 158, 142>> | "10126"
+  def to_unicode(205), do: 10125 # <<226, 158, 141>> | "10125"
+  def to_unicode(204), do: 10124 # <<226, 158, 140>> | "10124"
+  def to_unicode(203), do: 10123 # <<226, 158, 139>> | "10123"
+  def to_unicode(202), do: 10122 # <<226, 158, 138>> | "10122"
+  def to_unicode(201), do: 10121 # <<226, 158, 137>> | "10121"
+  def to_unicode(200), do: 10120 # <<226, 158, 136>> | "10120"
+  def to_unicode(199), do: 10119 # <<226, 158, 135>> | "10119"
+  def to_unicode(198), do: 10118 # <<226, 158, 134>> | "10118"
+  def to_unicode(197), do: 10117 # <<226, 158, 133>> | "10117"
+  def to_unicode(196), do: 10116 # <<226, 158, 132>> | "10116"
+  def to_unicode(195), do: 10115 # <<226, 158, 131>> | "10115"
+  def to_unicode(194), do: 10114 # <<226, 158, 130>> | "10114"
+  def to_unicode(193), do: 10113 # <<226, 158, 129>> | "10113"
+  def to_unicode(192), do: 10112 # <<226, 158, 128>> | "10112"
+  def to_unicode(191), do: 10111 # <<226, 157, 191>> | "10111"
+  def to_unicode(190), do: 10110 # <<226, 157, 190>> | "10110"
+  def to_unicode(189), do: 10109 # <<226, 157, 189>> | "10109"
+  def to_unicode(188), do: 10108 # <<226, 157, 188>> | "10108"
+  def to_unicode(187), do: 10107 # <<226, 157, 187>> | "10107"
+  def to_unicode(186), do: 10106 # <<226, 157, 186>> | "10106"
+  def to_unicode(185), do: 10105 # <<226, 157, 185>> | "10105"
+  def to_unicode(184), do: 10104 # <<226, 157, 184>> | "10104"
+  def to_unicode(183), do: 10103 # <<226, 157, 183>> | "10103"
+  def to_unicode(182), do: 10102 # <<226, 157, 182>> | "10102"
+  def to_unicode(181), do: 9321 # <<226, 145, 169>> | "9321"
+  def to_unicode(180), do: 9320 # <<226, 145, 168>> | "9320"
+  def to_unicode(179), do: 9319 # <<226, 145, 167>> | "9319"
+  def to_unicode(178), do: 9318 # <<226, 145, 166>> | "9318"
+  def to_unicode(177), do: 9317 # <<226, 145, 165>> | "9317"
+  def to_unicode(176), do: 9316 # <<226, 145, 164>> | "9316"
+  def to_unicode(175), do: 9315 # <<226, 145, 163>> | "9315"
+  def to_unicode(174), do: 9314 # <<226, 145, 162>> | "9314"
+  def to_unicode(173), do: 9313 # <<226, 145, 161>> | "9313"
+  def to_unicode(172), do: 9312 # <<226, 145, 160>> | "9312"
+  def to_unicode(171), do: 9824 # <<226, 153, 160>> | "9824"
+  def to_unicode(170), do: 9829 # <<226, 153, 165>> | "9829"
+  def to_unicode(169), do: 9830 # <<226, 153, 166>> | "9830"
+  def to_unicode(168), do: 9827 # <<226, 153, 163>> | "9827"
+  def to_unicode(167), do: 10087 # <<226, 157, 167>> | "10087"
+  def to_unicode(166), do: 10086 # <<226, 157, 166>> | "10086"
+  def to_unicode(165), do: 10085 # <<226, 157, 165>> | "10085"
+  def to_unicode(164), do: 10084 # <<226, 157, 164>> | "10084"
+  def to_unicode(163), do: 10083 # <<226, 157, 163>> | "10083"
+  def to_unicode(162), do: 10082 # <<226, 157, 162>> | "10082"
+  def to_unicode(161), do: 10081 # <<226, 157, 161>> | "10081"
+  def to_unicode(141), do: 10101 # <<226, 157, 181>> | "10101"
+  def to_unicode(140), do: 10100 # <<226, 157, 180>> | "10100"
+  def to_unicode(139), do: 10099 # <<226, 157, 179>> | "10099"
+  def to_unicode(138), do: 10098 # <<226, 157, 178>> | "10098"
+  def to_unicode(137), do: 10097 # <<226, 157, 177>> | "10097"
+  def to_unicode(136), do: 10096 # <<226, 157, 176>> | "10096"
+  def to_unicode(135), do: 10095 # <<226, 157, 175>> | "10095"
+  def to_unicode(134), do: 10094 # <<226, 157, 174>> | "10094"
+  def to_unicode(133), do: 10093 # <<226, 157, 173>> | "10093"
+  def to_unicode(132), do: 10092 # <<226, 157, 172>> | "10092"
+  def to_unicode(131), do: 10091 # <<226, 157, 171>> | "10091"
+  def to_unicode(130), do: 10090 # <<226, 157, 170>> | "10090"
+  def to_unicode(129), do: 10089 # <<226, 157, 169>> | "10089"
+  def to_unicode(128), do: 10088 # <<226, 157, 168>> | "10088"
+  def to_unicode(126), do: 10078 # <<226, 157, 158>> | "10078"
+  def to_unicode(125), do: 10077 # <<226, 157, 157>> | "10077"
+  def to_unicode(124), do: 10076 # <<226, 157, 156>> | "10076"
+  def to_unicode(123), do: 10075 # <<226, 157, 155>> | "10075"
+  def to_unicode(122), do: 10074 # <<226, 157, 154>> | "10074"
+  def to_unicode(121), do: 10073 # <<226, 157, 153>> | "10073"
+  def to_unicode(120), do: 10072 # <<226, 157, 152>> | "10072"
+  def to_unicode(119), do: 9687 # <<226, 151, 151>> | "9687"
+  def to_unicode(118), do: 10070 # <<226, 157, 150>> | "10070"
+  def to_unicode(117), do: 9670 # <<226, 151, 134>> | "9670"
+  def to_unicode(116), do: 9660 # <<226, 150, 188>> | "9660"
+  def to_unicode(115), do: 9650 # <<226, 150, 178>> | "9650"
+  def to_unicode(114), do: 10066 # <<226, 157, 146>> | "10066"
+  def to_unicode(113), do: 10065 # <<226, 157, 145>> | "10065"
+  def to_unicode(112), do: 10064 # <<226, 157, 144>> | "10064"
+  def to_unicode(111), do: 10063 # <<226, 157, 143>> | "10063"
+  def to_unicode(110), do: 9632 # <<226, 150, 160>> | "9632"
+  def to_unicode(109), do: 10061 # <<226, 157, 141>> | "10061"
+  def to_unicode(108), do: 9679 # <<226, 151, 143>> | "9679"
+  def to_unicode(107), do: 10059 # <<226, 157, 139>> | "10059"
+  def to_unicode(106), do: 10058 # <<226, 157, 138>> | "10058"
+  def to_unicode(105), do: 10057 # <<226, 157, 137>> | "10057"
+  def to_unicode(104), do: 10056 # <<226, 157, 136>> | "10056"
+  def to_unicode(103), do: 10055 # <<226, 157, 135>> | "10055"
+  def to_unicode(102), do: 10054 # <<226, 157, 134>> | "10054"
+  def to_unicode(101), do: 10053 # <<226, 157, 133>> | "10053"
+  def to_unicode(100), do: 10052 # <<226, 157, 132>> | "10052"
+  def to_unicode(99), do: 10051 # <<226, 157, 131>> | "10051"
+  def to_unicode(98), do: 10050 # <<226, 157, 130>> | "10050"
+  def to_unicode(97), do: 10049 # <<226, 157, 129>> | "10049"
+  def to_unicode(96), do: 10048 # <<226, 157, 128>> | "10048"
+  def to_unicode(95), do: 10047 # <<226, 156, 191>> | "10047"
+  def to_unicode(94), do: 10046 # <<226, 156, 190>> | "10046"
+  def to_unicode(93), do: 10045 # <<226, 156, 189>> | "10045"
+  def to_unicode(92), do: 10044 # <<226, 156, 188>> | "10044"
+  def to_unicode(91), do: 10043 # <<226, 156, 187>> | "10043"
+  def to_unicode(90), do: 10042 # <<226, 156, 186>> | "10042"
+  def to_unicode(89), do: 10041 # <<226, 156, 185>> | "10041"
+  def to_unicode(88), do: 10040 # <<226, 156, 184>> | "10040"
+  def to_unicode(87), do: 10039 # <<226, 156, 183>> | "10039"
+  def to_unicode(86), do: 10038 # <<226, 156, 182>> | "10038"
+  def to_unicode(85), do: 10037 # <<226, 156, 181>> | "10037"
+  def to_unicode(84), do: 10036 # <<226, 156, 180>> | "10036"
+  def to_unicode(83), do: 10035 # <<226, 156, 179>> | "10035"
+  def to_unicode(82), do: 10034 # <<226, 156, 178>> | "10034"
+  def to_unicode(81), do: 10033 # <<226, 156, 177>> | "10033"
+  def to_unicode(80), do: 10032 # <<226, 156, 176>> | "10032"
+  def to_unicode(79), do: 10031 # <<226, 156, 175>> | "10031"
+  def to_unicode(78), do: 10030 # <<226, 156, 174>> | "10030"
+  def to_unicode(77), do: 10029 # <<226, 156, 173>> | "10029"
+  def to_unicode(76), do: 10028 # <<226, 156, 172>> | "10028"
+  def to_unicode(75), do: 10027 # <<226, 156, 171>> | "10027"
+  def to_unicode(74), do: 10026 # <<226, 156, 170>> | "10026"
+  def to_unicode(73), do: 10025 # <<226, 156, 169>> | "10025"
+  def to_unicode(72), do: 9733 # <<226, 152, 133>> | "9733"
+  def to_unicode(71), do: 10023 # <<226, 156, 167>> | "10023"
+  def to_unicode(70), do: 10022 # <<226, 156, 166>> | "10022"
+  def to_unicode(69), do: 10021 # <<226, 156, 165>> | "10021"
+  def to_unicode(68), do: 10020 # <<226, 156, 164>> | "10020"
+  def to_unicode(67), do: 10019 # <<226, 156, 163>> | "10019"
+  def to_unicode(66), do: 10018 # <<226, 156, 162>> | "10018"
+  def to_unicode(65), do: 10017 # <<226, 156, 161>> | "10017"
+  def to_unicode(64), do: 10016 # <<226, 156, 160>> | "10016"
+  def to_unicode(63), do: 10015 # <<226, 156, 159>> | "10015"
+  def to_unicode(62), do: 10014 # <<226, 156, 158>> | "10014"
+  def to_unicode(61), do: 10013 # <<226, 156, 157>> | "10013"
+  def to_unicode(60), do: 10012 # <<226, 156, 156>> | "10012"
+  def to_unicode(59), do: 10011 # <<226, 156, 155>> | "10011"
+  def to_unicode(58), do: 10010 # <<226, 156, 154>> | "10010"
+  def to_unicode(57), do: 10009 # <<226, 156, 153>> | "10009"
+  def to_unicode(56), do: 10008 # <<226, 156, 152>> | "10008"
+  def to_unicode(55), do: 10007 # <<226, 156, 151>> | "10007"
+  def to_unicode(54), do: 10006 # <<226, 156, 150>> | "10006"
+  def to_unicode(53), do: 10005 # <<226, 156, 149>> | "10005"
+  def to_unicode(52), do: 10004 # <<226, 156, 148>> | "10004"
+  def to_unicode(51), do: 10003 # <<226, 156, 147>> | "10003"
+  def to_unicode(50), do: 10002 # <<226, 156, 146>> | "10002"
+  def to_unicode(49), do: 10001 # <<226, 156, 145>> | "10001"
+  def to_unicode(48), do: 10000 # <<226, 156, 144>> | "10000"
+  def to_unicode(47), do: 9999 # <<226, 156, 143>> | "9999"
+  def to_unicode(46), do: 9998 # <<226, 156, 142>> | "9998"
+  def to_unicode(45), do: 9997 # <<226, 156, 141>> | "9997"
+  def to_unicode(44), do: 9996 # <<226, 156, 140>> | "9996"
+  def to_unicode(43), do: 9758 # <<226, 152, 158>> | "9758"
+  def to_unicode(42), do: 9755 # <<226, 152, 155>> | "9755"
+  def to_unicode(41), do: 9993 # <<226, 156, 137>> | "9993"
+  def to_unicode(40), do: 9992 # <<226, 156, 136>> | "9992"
+  def to_unicode(39), do: 9991 # <<226, 156, 135>> | "9991"
+  def to_unicode(38), do: 9990 # <<226, 156, 134>> | "9990"
+  def to_unicode(37), do: 9742 # <<226, 152, 142>> | "9742"
+  def to_unicode(36), do: 9988 # <<226, 156, 132>> | "9988"
+  def to_unicode(35), do: 9987 # <<226, 156, 131>> | "9987"
+  def to_unicode(34), do: 9986 # <<226, 156, 130>> | "9986"
+  def to_unicode(33), do: 9985 # <<226, 156, 129>> | "9985"
+  def to_unicode(32), do: 32 # <<32>> | "32"
 end
