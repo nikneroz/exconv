@@ -11,6 +11,16 @@ defmodule Exconv.MixProject do
     ]
   end
 
+  def package do
+    [
+      description: "Encoding conversion library for Elixir",
+      licenses: ["MIT"],
+      links: %{
+        GitHub: "https://github.com/nikneroz/exconv"
+      }
+    ]
+  end
+
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
