@@ -7,11 +7,12 @@ defmodule Exconv.MixProject do
       version: "0.1.0",
       elixir: "~> 1.7",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      package: package()
     ]
   end
 
-  def package do
+  defp package do
     [
       description: "Encoding conversion library for Elixir",
       licenses: ["MIT"],
