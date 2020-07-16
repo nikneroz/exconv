@@ -223,24 +223,24 @@ defmodule Exconv.Mapper.Cp866 do
   def to_unicode(34), do: 34 # <<34>> | "\""
   def to_unicode(33), do: 33 # <<33>> | "!"
   def to_unicode(32), do: 32 # <<32>> | " "
-  def to_unicode(31), do: 31 # <<31>> | <<31>>
-  def to_unicode(30), do: 30 # <<30>> | <<30>>
-  def to_unicode(29), do: 29 # <<29>> | <<29>>
-  def to_unicode(28), do: 28 # <<28>> | <<28>>
+  def to_unicode(31), do: nil # <<31>> | <<31>>
+  def to_unicode(30), do: nil # <<30>> | <<30>>
+  def to_unicode(29), do: nil # <<29>> | <<29>>
+  def to_unicode(28), do: nil # <<28>> | <<28>>
   def to_unicode(27), do: 27 # <<27>> | "\e"
-  def to_unicode(26), do: 26 # <<26>> | <<26>>
-  def to_unicode(25), do: 25 # <<25>> | <<25>>
-  def to_unicode(24), do: 24 # <<24>> | <<24>>
-  def to_unicode(23), do: 23 # <<23>> | <<23>>
-  def to_unicode(22), do: 22 # <<22>> | <<22>>
-  def to_unicode(21), do: 21 # <<21>> | <<21>>
-  def to_unicode(20), do: 20 # <<20>> | <<20>>
-  def to_unicode(19), do: 19 # <<19>> | <<19>>
-  def to_unicode(18), do: 18 # <<18>> | <<18>>
-  def to_unicode(17), do: 17 # <<17>> | <<17>>
-  def to_unicode(16), do: 16 # <<16>> | <<16>>
-  def to_unicode(15), do: 15 # <<15>> | <<15>>
-  def to_unicode(14), do: 14 # <<14>> | <<14>>
+  def to_unicode(26), do: nil # <<26>> | <<26>>
+  def to_unicode(25), do: nil # <<25>> | <<25>>
+  def to_unicode(24), do: nil # <<24>> | <<24>>
+  def to_unicode(23), do: nil # <<23>> | <<23>>
+  def to_unicode(22), do: nil # <<22>> | <<22>>
+  def to_unicode(21), do: nil # <<21>> | <<21>>
+  def to_unicode(20), do: nil # <<20>> | <<20>>
+  def to_unicode(19), do: nil # <<19>> | <<19>>
+  def to_unicode(18), do: nil # <<18>> | <<18>>
+  def to_unicode(17), do: nil # <<17>> | <<17>>
+  def to_unicode(16), do: nil # <<16>> | <<16>>
+  def to_unicode(15), do: nil # <<15>> | <<15>>
+  def to_unicode(14), do: nil # <<14>> | <<14>>
   def to_unicode(13), do: 13 # <<13>> | "\r"
   def to_unicode(12), do: 12 # <<12>> | "\f"
   def to_unicode(11), do: 11 # <<11>> | "\v"
@@ -248,11 +248,11 @@ defmodule Exconv.Mapper.Cp866 do
   def to_unicode(9), do: 9 # <<9>> | "\t"
   def to_unicode(8), do: 8 # <<8>> | "\b"
   def to_unicode(7), do: 7 # <<7>> | "\a"
-  def to_unicode(6), do: 6 # <<6>> | <<6>>
-  def to_unicode(5), do: 5 # <<5>> | <<5>>
-  def to_unicode(4), do: 4 # <<4>> | <<4>>
-  def to_unicode(3), do: 3 # <<3>> | <<3>>
-  def to_unicode(2), do: 2 # <<2>> | <<2>>
-  def to_unicode(1), do: 1 # <<1>> | <<1>>
-  def to_unicode(0), do: 0 # <<0>> | <<0>>
+  def to_unicode(6), do: nil # <<6>> | <<6>>
+  def to_unicode(5), do: nil # <<5>> | <<5>>
+  def to_unicode(4), do: nil # <<4>> | <<4>>
+  def to_unicode(3), do: nil # <<3>> | <<3>>
+  def to_unicode(2), do: nil # <<2>> | <<2>>
+  def to_unicode(1), do: nil # <<1>> | <<1>>
+  def to_unicode(0), do: nil # <<0>> | <<0>>
 end

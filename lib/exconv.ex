@@ -43,7 +43,7 @@ defmodule Exconv do
   end
   
 
-  def generate_mappers do
+  defp generate_mappers do
     encodings = fetch_encodings()
     available_encodings =
       for encoding <- encodings do
@@ -70,7 +70,12 @@ defmodule Exconv do
                   "\n" -> "\\n"
                   sym -> sym
                 end
-              IO.binwrite(file, "  def to_unicode(#{code}), do: #{inspect(symbol)} # #{inspect(binary_symbol, binaries: :as_binaries)} | #{inspect(binary_symbol)}\n")
+              case String.printable?(binary_symbol) do
+                true ->
+                  IO.binwrite(file, "  def to_unicode(#{code}), do: #{inspect(symbol)} # #{inspect(binary_symbol, binaries: :as_binaries)} | #{inspect(binary_symbol)}\n")
+                false ->
+                  IO.binwrite(file, "  def to_unicode(#{code}), do: nil # #{inspect(binary_symbol, binaries: :as_binaries)} | #{inspect(binary_symbol)}\n")
+              end
             end
             IO.binwrite(file, "end")
             File.close(file)

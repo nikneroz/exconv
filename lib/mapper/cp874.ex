@@ -1,8 +1,8 @@
 defmodule Exconv.Mapper.Cp874 do
-  def to_unicode(255), do: <<194, 152>> # <<194, 152>> | <<194, 152>>
-  def to_unicode(254), do: <<194, 152>> # <<194, 152>> | <<194, 152>>
-  def to_unicode(253), do: <<194, 152>> # <<194, 152>> | <<194, 152>>
-  def to_unicode(252), do: <<194, 152>> # <<194, 152>> | <<194, 152>>
+  def to_unicode(255), do: nil # <<194, 152>> | <<194, 152>>
+  def to_unicode(254), do: nil # <<194, 152>> | <<194, 152>>
+  def to_unicode(253), do: nil # <<194, 152>> | <<194, 152>>
+  def to_unicode(252), do: nil # <<194, 152>> | <<194, 152>>
   def to_unicode(251), do: 3675 # <<224, 185, 155>> | "๛"
   def to_unicode(250), do: 3674 # <<224, 185, 154>> | "๚"
   def to_unicode(249), do: 3673 # <<224, 185, 153>> | "๙"
@@ -32,10 +32,10 @@ defmodule Exconv.Mapper.Cp874 do
   def to_unicode(225), do: 3649 # <<224, 185, 129>> | "แ"
   def to_unicode(224), do: 3648 # <<224, 185, 128>> | "เ"
   def to_unicode(223), do: 3647 # <<224, 184, 191>> | "฿"
-  def to_unicode(222), do: <<194, 152>> # <<194, 152>> | <<194, 152>>
-  def to_unicode(221), do: <<194, 152>> # <<194, 152>> | <<194, 152>>
-  def to_unicode(220), do: <<194, 152>> # <<194, 152>> | <<194, 152>>
-  def to_unicode(219), do: <<194, 152>> # <<194, 152>> | <<194, 152>>
+  def to_unicode(222), do: nil # <<194, 152>> | <<194, 152>>
+  def to_unicode(221), do: nil # <<194, 152>> | <<194, 152>>
+  def to_unicode(220), do: nil # <<194, 152>> | <<194, 152>>
+  def to_unicode(219), do: nil # <<194, 152>> | <<194, 152>>
   def to_unicode(218), do: 3642 # <<224, 184, 186>> | "ฺ"
   def to_unicode(217), do: 3641 # <<224, 184, 185>> | "ู"
   def to_unicode(216), do: 3640 # <<224, 184, 184>> | "ุ"
@@ -95,14 +95,14 @@ defmodule Exconv.Mapper.Cp874 do
   def to_unicode(162), do: 3586 # <<224, 184, 130>> | "ข"
   def to_unicode(161), do: 3585 # <<224, 184, 129>> | "ก"
   def to_unicode(160), do: 160 # <<194, 160>> | " "
-  def to_unicode(159), do: <<194, 152>> # <<194, 152>> | <<194, 152>>
-  def to_unicode(158), do: <<194, 152>> # <<194, 152>> | <<194, 152>>
-  def to_unicode(157), do: <<194, 152>> # <<194, 152>> | <<194, 152>>
-  def to_unicode(156), do: <<194, 152>> # <<194, 152>> | <<194, 152>>
-  def to_unicode(155), do: <<194, 152>> # <<194, 152>> | <<194, 152>>
-  def to_unicode(154), do: <<194, 152>> # <<194, 152>> | <<194, 152>>
-  def to_unicode(153), do: <<194, 152>> # <<194, 152>> | <<194, 152>>
-  def to_unicode(152), do: <<194, 152>> # <<194, 152>> | <<194, 152>>
+  def to_unicode(159), do: nil # <<194, 152>> | <<194, 152>>
+  def to_unicode(158), do: nil # <<194, 152>> | <<194, 152>>
+  def to_unicode(157), do: nil # <<194, 152>> | <<194, 152>>
+  def to_unicode(156), do: nil # <<194, 152>> | <<194, 152>>
+  def to_unicode(155), do: nil # <<194, 152>> | <<194, 152>>
+  def to_unicode(154), do: nil # <<194, 152>> | <<194, 152>>
+  def to_unicode(153), do: nil # <<194, 152>> | <<194, 152>>
+  def to_unicode(152), do: nil # <<194, 152>> | <<194, 152>>
   def to_unicode(151), do: 8212 # <<226, 128, 148>> | "—"
   def to_unicode(150), do: 8211 # <<226, 128, 147>> | "–"
   def to_unicode(149), do: 8226 # <<226, 128, 162>> | "•"
@@ -110,22 +110,22 @@ defmodule Exconv.Mapper.Cp874 do
   def to_unicode(147), do: 8220 # <<226, 128, 156>> | "“"
   def to_unicode(146), do: 8217 # <<226, 128, 153>> | "’"
   def to_unicode(145), do: 8216 # <<226, 128, 152>> | "‘"
-  def to_unicode(144), do: <<194, 152>> # <<194, 152>> | <<194, 152>>
-  def to_unicode(143), do: <<194, 152>> # <<194, 152>> | <<194, 152>>
-  def to_unicode(142), do: <<194, 152>> # <<194, 152>> | <<194, 152>>
-  def to_unicode(141), do: <<194, 152>> # <<194, 152>> | <<194, 152>>
-  def to_unicode(140), do: <<194, 152>> # <<194, 152>> | <<194, 152>>
-  def to_unicode(139), do: <<194, 152>> # <<194, 152>> | <<194, 152>>
-  def to_unicode(138), do: <<194, 152>> # <<194, 152>> | <<194, 152>>
-  def to_unicode(137), do: <<194, 152>> # <<194, 152>> | <<194, 152>>
-  def to_unicode(136), do: <<194, 152>> # <<194, 152>> | <<194, 152>>
-  def to_unicode(135), do: <<194, 152>> # <<194, 152>> | <<194, 152>>
-  def to_unicode(134), do: <<194, 152>> # <<194, 152>> | <<194, 152>>
+  def to_unicode(144), do: nil # <<194, 152>> | <<194, 152>>
+  def to_unicode(143), do: nil # <<194, 152>> | <<194, 152>>
+  def to_unicode(142), do: nil # <<194, 152>> | <<194, 152>>
+  def to_unicode(141), do: nil # <<194, 152>> | <<194, 152>>
+  def to_unicode(140), do: nil # <<194, 152>> | <<194, 152>>
+  def to_unicode(139), do: nil # <<194, 152>> | <<194, 152>>
+  def to_unicode(138), do: nil # <<194, 152>> | <<194, 152>>
+  def to_unicode(137), do: nil # <<194, 152>> | <<194, 152>>
+  def to_unicode(136), do: nil # <<194, 152>> | <<194, 152>>
+  def to_unicode(135), do: nil # <<194, 152>> | <<194, 152>>
+  def to_unicode(134), do: nil # <<194, 152>> | <<194, 152>>
   def to_unicode(133), do: 8230 # <<226, 128, 166>> | "…"
-  def to_unicode(132), do: <<194, 152>> # <<194, 152>> | <<194, 152>>
-  def to_unicode(131), do: <<194, 152>> # <<194, 152>> | <<194, 152>>
-  def to_unicode(130), do: <<194, 152>> # <<194, 152>> | <<194, 152>>
-  def to_unicode(129), do: <<194, 152>> # <<194, 152>> | <<194, 152>>
+  def to_unicode(132), do: nil # <<194, 152>> | <<194, 152>>
+  def to_unicode(131), do: nil # <<194, 152>> | <<194, 152>>
+  def to_unicode(130), do: nil # <<194, 152>> | <<194, 152>>
+  def to_unicode(129), do: nil # <<194, 152>> | <<194, 152>>
   def to_unicode(128), do: 8364 # <<226, 130, 172>> | "€"
   def to_unicode(127), do: 127 # <<127>> | "\d"
   def to_unicode(126), do: 126 # <<126>> | "~"
@@ -223,24 +223,24 @@ defmodule Exconv.Mapper.Cp874 do
   def to_unicode(34), do: 34 # <<34>> | "\""
   def to_unicode(33), do: 33 # <<33>> | "!"
   def to_unicode(32), do: 32 # <<32>> | " "
-  def to_unicode(31), do: 31 # <<31>> | <<31>>
-  def to_unicode(30), do: 30 # <<30>> | <<30>>
-  def to_unicode(29), do: 29 # <<29>> | <<29>>
-  def to_unicode(28), do: 28 # <<28>> | <<28>>
+  def to_unicode(31), do: nil # <<31>> | <<31>>
+  def to_unicode(30), do: nil # <<30>> | <<30>>
+  def to_unicode(29), do: nil # <<29>> | <<29>>
+  def to_unicode(28), do: nil # <<28>> | <<28>>
   def to_unicode(27), do: 27 # <<27>> | "\e"
-  def to_unicode(26), do: 26 # <<26>> | <<26>>
-  def to_unicode(25), do: 25 # <<25>> | <<25>>
-  def to_unicode(24), do: 24 # <<24>> | <<24>>
-  def to_unicode(23), do: 23 # <<23>> | <<23>>
-  def to_unicode(22), do: 22 # <<22>> | <<22>>
-  def to_unicode(21), do: 21 # <<21>> | <<21>>
-  def to_unicode(20), do: 20 # <<20>> | <<20>>
-  def to_unicode(19), do: 19 # <<19>> | <<19>>
-  def to_unicode(18), do: 18 # <<18>> | <<18>>
-  def to_unicode(17), do: 17 # <<17>> | <<17>>
-  def to_unicode(16), do: 16 # <<16>> | <<16>>
-  def to_unicode(15), do: 15 # <<15>> | <<15>>
-  def to_unicode(14), do: 14 # <<14>> | <<14>>
+  def to_unicode(26), do: nil # <<26>> | <<26>>
+  def to_unicode(25), do: nil # <<25>> | <<25>>
+  def to_unicode(24), do: nil # <<24>> | <<24>>
+  def to_unicode(23), do: nil # <<23>> | <<23>>
+  def to_unicode(22), do: nil # <<22>> | <<22>>
+  def to_unicode(21), do: nil # <<21>> | <<21>>
+  def to_unicode(20), do: nil # <<20>> | <<20>>
+  def to_unicode(19), do: nil # <<19>> | <<19>>
+  def to_unicode(18), do: nil # <<18>> | <<18>>
+  def to_unicode(17), do: nil # <<17>> | <<17>>
+  def to_unicode(16), do: nil # <<16>> | <<16>>
+  def to_unicode(15), do: nil # <<15>> | <<15>>
+  def to_unicode(14), do: nil # <<14>> | <<14>>
   def to_unicode(13), do: 13 # <<13>> | "\r"
   def to_unicode(12), do: 12 # <<12>> | "\f"
   def to_unicode(11), do: 11 # <<11>> | "\v"
@@ -248,11 +248,11 @@ defmodule Exconv.Mapper.Cp874 do
   def to_unicode(9), do: 9 # <<9>> | "\t"
   def to_unicode(8), do: 8 # <<8>> | "\b"
   def to_unicode(7), do: 7 # <<7>> | "\a"
-  def to_unicode(6), do: 6 # <<6>> | <<6>>
-  def to_unicode(5), do: 5 # <<5>> | <<5>>
-  def to_unicode(4), do: 4 # <<4>> | <<4>>
-  def to_unicode(3), do: 3 # <<3>> | <<3>>
-  def to_unicode(2), do: 2 # <<2>> | <<2>>
-  def to_unicode(1), do: 1 # <<1>> | <<1>>
-  def to_unicode(0), do: 0 # <<0>> | <<0>>
+  def to_unicode(6), do: nil # <<6>> | <<6>>
+  def to_unicode(5), do: nil # <<5>> | <<5>>
+  def to_unicode(4), do: nil # <<4>> | <<4>>
+  def to_unicode(3), do: nil # <<3>> | <<3>>
+  def to_unicode(2), do: nil # <<2>> | <<2>>
+  def to_unicode(1), do: nil # <<1>> | <<1>>
+  def to_unicode(0), do: nil # <<0>> | <<0>>
 end

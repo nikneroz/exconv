@@ -14,7 +14,7 @@ defmodule Exconv.Parser do
   end
 
   def to_unicode!(module, string, result \\ [])
-  def to_unicode!(_table, "", result), do: result |> Enum.reverse() |> List.to_string()
+  def to_unicode!(_table, "", result), do: result |> Enum.reverse() |> Enum.reject(&is_nil/1) |> List.to_string()
   def to_unicode!(module, <<head, tail::binary>>, result) do
     to_unicode!(module, tail, [module.to_unicode(head) | result])
   end
