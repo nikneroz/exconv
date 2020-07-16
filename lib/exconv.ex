@@ -3,6 +3,30 @@ defmodule Exconv do
   Documentation for Exconv.
   """
 
+  @long_compiling [
+    "japanese",
+    "old5601",
+    "ksc5601",
+    "ksx1001",
+    "cp936",
+    "shiftjis",
+    "chintrad",
+    "jis0212",
+    "jis0208",
+    "cp950",
+    "keyboard",
+    "iso8859_3",
+    "turkish",
+    "cp862",
+    "big5",
+    "cp932",
+    "johab",
+    "cns11643",
+    "kps9566",
+    "cp949",
+    "chinsimp"
+  ]
+
   @doc """
   Hello world.
 
@@ -17,8 +41,9 @@ defmodule Exconv do
     |> Exconv.Mapper.get_module()
     |> Exconv.Parser.to_unicode!(string)
   end
+  
 
-  defp generate_mappers do
+  def generate_mappers do
     encodings = fetch_encodings()
     available_encodings =
       for encoding <- encodings do
@@ -139,7 +164,7 @@ defmodule Exconv do
           _ -> encoding
         end |> String.replace("-", "_") |> String.downcase()
       result =
-        case is_encoding?(file, encoding) do
+        case is_encoding?(file, encoding) && (name not in @long_compiling) do
           true -> {:ok, name, file_path}
           false -> {:error, file_path}
         end

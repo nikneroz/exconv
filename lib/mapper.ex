@@ -6,7 +6,6 @@ defmodule Exconv.Mapper do
   def get_module(:iso8859_7), do: Mapper.Iso8859_7
   def get_module(:iso8859_6), do: Mapper.Iso8859_6
   def get_module(:iso8859_2), do: Mapper.Iso8859_2
-  def get_module(:iso8859_3), do: Mapper.Iso8859_3
   def get_module(:iso8859_1), do: Mapper.Iso8859_1
   def get_module(:iso8859_14), do: Mapper.Iso8859_14
   def get_module(:iso8859_15), do: Mapper.Iso8859_15
@@ -17,23 +16,10 @@ defmodule Exconv.Mapper do
   def get_module(:iso8859_9), do: Mapper.Iso8859_9
   def get_module(:iso8859_10), do: Mapper.Iso8859_10
   def get_module(:jis0201), do: Mapper.Jis0201
-  def get_module(:jis0212), do: Mapper.Jis0212
-  def get_module(:shiftjis), do: Mapper.Shiftjis
-  def get_module(:jis0208), do: Mapper.Jis0208
-  def get_module(:cns11643), do: Mapper.Cns11643
-  def get_module(:big5), do: Mapper.Big5
-  def get_module(:ksx1001), do: Mapper.Ksx1001
-  def get_module(:ksc5601), do: Mapper.Ksc5601
-  def get_module(:johab), do: Mapper.Johab
-  def get_module(:old5601), do: Mapper.Old5601
   def get_module(:cp1258), do: Mapper.Cp1258
-  def get_module(:cp950), do: Mapper.Cp950
-  def get_module(:cp936), do: Mapper.Cp936
-  def get_module(:cp932), do: Mapper.Cp932
   def get_module(:cp874), do: Mapper.Cp874
   def get_module(:cp1256), do: Mapper.Cp1256
   def get_module(:cp1257), do: Mapper.Cp1257
-  def get_module(:cp949), do: Mapper.Cp949
   def get_module(:cp1255), do: Mapper.Cp1255
   def get_module(:cp1254), do: Mapper.Cp1254
   def get_module(:cp1250), do: Mapper.Cp1250
@@ -53,7 +39,6 @@ defmodule Exconv.Mapper do
   def get_module(:cp850), do: Mapper.Cp850
   def get_module(:cp861), do: Mapper.Cp861
   def get_module(:cp860), do: Mapper.Cp860
-  def get_module(:cp862), do: Mapper.Cp862
   def get_module(:cp863), do: Mapper.Cp863
   def get_module(:cp866), do: Mapper.Cp866
   def get_module(:cp737), do: Mapper.Cp737
@@ -67,7 +52,6 @@ defmodule Exconv.Mapper do
   def get_module(:koi8_u), do: Mapper.Koi8_u
   def get_module(:apl_iso_ir_68), do: Mapper.Apl_iso_ir_68
   def get_module(:koi8_r), do: Mapper.Koi8_r
-  def get_module(:kps9566), do: Mapper.Kps9566
   def get_module(:ibmgraph), do: Mapper.Ibmgraph
   def get_module(:cp424), do: Mapper.Cp424
   def get_module(:kz1048), do: Mapper.Kz1048
@@ -78,22 +62,17 @@ defmodule Exconv.Mapper do
   def get_module(:dingbats), do: Mapper.Dingbats
   def get_module(:romanian), do: Mapper.Romanian
   def get_module(:centeuro), do: Mapper.Centeuro
-  def get_module(:chinsimp), do: Mapper.Chinsimp
   def get_module(:symbol), do: Mapper.Symbol
   def get_module(:roman), do: Mapper.Roman
-  def get_module(:keyboard), do: Mapper.Keyboard
   def get_module(:gurmukhi), do: Mapper.Gurmukhi
   def get_module(:cyrillic), do: Mapper.Cyrillic
-  def get_module(:chintrad), do: Mapper.Chintrad
   def get_module(:ukraine), do: Mapper.Ukraine
   def get_module(:gujarati), do: Mapper.Gujarati
   def get_module(:inuit), do: Mapper.Inuit
   def get_module(:gaelic), do: Mapper.Gaelic
   def get_module(:iceland), do: Mapper.Iceland
-  def get_module(:turkish), do: Mapper.Turkish
   def get_module(:devanaga), do: Mapper.Devanaga
-  def get_module(:japanese), do: Mapper.Japanese
   def list_of_encodings() do
-    [:gsm0338, :iso8859_4, :iso8859_5, :iso8859_7, :iso8859_6, :iso8859_2, :iso8859_3, :iso8859_1, :iso8859_14, :iso8859_15, :iso8859_16, :iso8859_13, :iso8859_11, :iso8859_8, :iso8859_9, :iso8859_10, :jis0201, :jis0212, :shiftjis, :jis0208, :cns11643, :big5, :ksx1001, :ksc5601, :johab, :old5601, :cp1258, :cp950, :cp936, :cp932, :cp874, :cp1256, :cp1257, :cp949, :cp1255, :cp1254, :cp1250, :cp1251, :cp1253, :cp1252, :latin2, :cp500, :cp875, :cp1026, :cp037, :cp775, :cp869, :cp855, :cp857, :cp852, :cp850, :cp861, :cp860, :cp862, :cp863, :cp866, :cp737, :cp864, :cp865, :cp437, :nextstep, :us_ascii_quotes, :cp856, :cp1006, :koi8_u, :apl_iso_ir_68, :koi8_r, :kps9566, :ibmgraph, :cp424, :kz1048, :croatian, :celtic, :greek, :thai, :dingbats, :romanian, :centeuro, :chinsimp, :symbol, :roman, :keyboard, :gurmukhi, :cyrillic, :chintrad, :ukraine, :gujarati, :inuit, :gaelic, :iceland, :turkish, :devanaga, :japanese]
+    [:gsm0338, :iso8859_4, :iso8859_5, :iso8859_7, :iso8859_6, :iso8859_2, :iso8859_1, :iso8859_14, :iso8859_15, :iso8859_16, :iso8859_13, :iso8859_11, :iso8859_8, :iso8859_9, :iso8859_10, :jis0201, :cp1258, :cp874, :cp1256, :cp1257, :cp1255, :cp1254, :cp1250, :cp1251, :cp1253, :cp1252, :latin2, :cp500, :cp875, :cp1026, :cp037, :cp775, :cp869, :cp855, :cp857, :cp852, :cp850, :cp861, :cp860, :cp863, :cp866, :cp737, :cp864, :cp865, :cp437, :nextstep, :us_ascii_quotes, :cp856, :cp1006, :koi8_u, :apl_iso_ir_68, :koi8_r, :ibmgraph, :cp424, :kz1048, :croatian, :celtic, :greek, :thai, :dingbats, :romanian, :centeuro, :symbol, :roman, :gurmukhi, :cyrillic, :ukraine, :gujarati, :inuit, :gaelic, :iceland, :devanaga]
   end
 end
