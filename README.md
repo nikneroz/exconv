@@ -37,7 +37,7 @@ by adding `exconv` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:exconv, "~> 0.1.1"}
+    {:exconv, "~> 0.1.3"}
   ]
 end
 ```
